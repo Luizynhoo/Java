@@ -1,7 +1,9 @@
+package Listas;
+
 public class TestaPessoa {
     public static void main(String[] args) {
-        // Criando objeto da classe Pessoa
-        Pessoa pessoa = new Pessoa("Carlos Silva", 35, 85.0, 1.75);
+        // Criando e inicializando o objeto
+        Pessoa pessoa = new Pessoa("Ana Souza", 28, 68.0, 1.65);
 
         // Exibindo os dados
         System.out.println("Nome: " + pessoa.getNome());
@@ -9,7 +11,7 @@ public class TestaPessoa {
         System.out.println("Peso: " + pessoa.getPeso() + " kg");
         System.out.println("Altura: " + pessoa.getAltura() + " m");
 
-        // Cálculo do IMC
+        // Cálculo do IMC e classificação
         double imc = pessoa.calculaIMC();
         System.out.printf("IMC: %.2f\n", imc);
         System.out.println("Classificação: " + pessoa.classificacaoIMC());
